@@ -42,7 +42,7 @@ class _SignupPageState extends State<SignupPage> {
     setState(() {
       result = response.body;
       print(response.body);
-      if (!result.contains("That username is taken! try another")) {
+      if (!result.contains("This username is taken! try another")) {
         Navigator.pushReplacementNamed(context, '/home');
         useremail = email.text;
       } 
